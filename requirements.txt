@@ -1,0 +1,6 @@
+playwright
+pandas
+duckdb==1.5.4
+python-dotenv
+streamlit
+plotly
