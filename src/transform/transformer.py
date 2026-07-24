@@ -87,7 +87,6 @@ def transform_data(input_file, output_file):
     def extract_review_snippet(text):
         if pd.isna(text):
             return None
-        # Pandas otomatis menghilangkan escape double quote (menjadi single quote ") saat load CSV
         match = re.search(r'"([^"]+)"', str(text))
         if match:
             return match.group(1).strip()
